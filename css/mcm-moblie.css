@@ -163,14 +163,14 @@ header .top-con .btn-con .menu-btn {
 
 .first-wrap .first-con ul li {
 	float: left;
-	width: 33.3%;
-	height: 330px;
+	width: 26%;
+	margin-right: 10%;
 	text-align: center;
 	cursor: pointer;
 }
 
 .first-wrap .first-con ul li img {
-	width: 150px;
+	width: 100%;
 	vertical-align: top;
 }
 
