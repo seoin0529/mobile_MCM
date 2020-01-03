@@ -2,11 +2,14 @@
 <html lang ="en">
 	<head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>mcm</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/mcm-moblie.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/mcm-mobile.js"></script>
+	<script src="js/20191209-accirdion.js"></script>
 </head>
 
 <body>
@@ -17,9 +20,182 @@
 				<span class="menu-btn"></span>
 				<span class="menu-btn"></span>
 			</div>
-			<div class="nav"></div>
+			<div class="nav">
+			<div class="nav-btn">
+			<span class="btn-menu">닫기</span>
+			</div>
+				<ul class="main-nav">
+					<li class="t">여성
+					<ul class="first">
+						<li>신상품</li>
+						<li class="w-b" >여성가방+
+						<ul class="w-b-a">
+							<li>전체보기</li>	
+							<li>크로스바디백</li>	
+							<li>숄더백</li>	
+							<li>쇼퍼백</li>	
+							<li>탑핸들백</li>	
+							<li>파우치&amp;클러치백</li>	
+							<li>벨트백</li>	
+							<li>미니백</li>	
+						</ul>
+<!--						-->
+						</li>
+						<li class="w-c">지갑+
+						<ul class="w-c-a">
+							<li>전체보기</li>
+							<li>반지갑</li>
+							<li>카드&amp;키케이스</li>
+							<li>장지갑</li>
+							<li>파우치</li>
+						</ul>
+						</li>
+						<li>백팩</li>
+						<li class="w-d">액세서리+
+						<ul class="w-d-a">
+							<li>전체보기</li>
+							<li>아이웨어</li>
+							<li>스카프</li>
+							<li>테크놀로지</li>
+							<li>참&amp;키링</li>
+							<li>벨트</li>
+							<li>숄더스트랩</li>
+							<li>인형</li>
+							<li>쥬얼리</li>
+						</ul>
+						</li>
+						<li class="w-e">의류+
+						<ul class="w-e-a">
+							<li>전체보기</li>
+							<li>아우터웨어</li>
+							<li>티셔츠</li>
+							<li>하의</li>
+						</ul>
+						</li>
+						<li class="w-f">슈즈+
+						<ul class="w-f-a">
+							<li>전체보기</li>	
+							<li>스니커즈</li>	
+						</ul>
+						</li>
+						<li class="w-g">트래블+
+						<ul class="w-g-a">
+							<li>전체보기</li>
+							<li>여행캐리어</li>
+							<li>여행위켄더</li>
+							<li>여행백팩</li>
+							<li>여행액세서리</li>
+						</ul>
+						</li>
+					</ul>
+					</li>
+					<li class="t">남성
+					<ul class="first">
+						<li>신상품</li>
+						<li>남성가방+
+						<ul>
+							<li>전체보기</li>
+							<li>파우치</li>
+							<li>벨프백</li>
+							<li>크로스백</li>
+							<li>토트백</li>
+							<li>브리프케이스</li>
+						</ul>
+						</li>
+						<li>지갑+
+						<ul>
+							<li>전체보기</li>
+							<li>반지갑</li>
+							<li>카드&amp;키케이스</li>
+							<li>장지갑</li>
+							<li>머니클립</li>
+						</ul>
+						</li>
+						<li>백팩</li>
+						<li>액세서리+
+						<ul>
+							<li>전체보기</li>
+							<li>벨트</li>
+							<li>테크놀로지</li>
+							<li>아이웨어</li>
+							<li>모자</li>
+							<li>참&amp;키링</li>
+							<li>펫 액세서리</li>
+						</ul>
+						</li>
+						<li>의류+
+						<ul>
+							<li>전체보기</li>
+							<li>아우터웨어</li>
+							<li>티셔츠</li>
+							<li>하의</li>
+						</ul>
+						</li>
+						<li>슈즈+
+						<ul>
+							<li>전체보기</li>
+							<li>스니커즈</li>
+							<li>슬리퍼</li>
+						</ul>
+						</li>
+						<li>트래블
+						<ul>
+							<li>전체보기</li>
+							<li>여행캐리어</li>
+							<li>여행위켄더</li>
+							<li>여행백팩</li>
+							<li>여행액세서리</li>
+						</ul>
+						</li>
+					</ul>
+					</li>
+					<li class="t">백팩</li>
+					<li class="t">선물
+					<ul class="first">
+						<li>설날을 위한 선물</li>
+						<li>여성용 선물</li>
+						<li>남성용 선물</li>
+						<li>30만원미만 선물</li>
+					</ul>
+					</li>
+					<li class="t">시즌오프
+					<ul class="first">
+						<li>모두보기</li>
+						<li>가방</li>
+						<li>지갑</li>
+						<li>백팩</li>
+						<li>액세서리</li>
+						<li>의류&amp;슈즈</li>
+					</ul>
+					</li>
+					<li class="t">컬렉션
+					<ul class="first">
+						<li>MCM홀리데이</li>
+						<li>MCM클래식</li>
+						<li>2019가을/겨울</li>
+						<li>힘멜'HIMMEL'스니커즈</li>
+						<li>2019봄/여름</li>
+						<li>2019봄/여름</li>
+						<li>2018가을/겨울</li>
+					</ul>
+					</li>
+				</ul>
+				<div class="b-con">
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<img src="images/mcm/icon/icon_store.png" alt="검색">
+					<ul>
+						<li>전화하기</li>
+						<li>배송조회</li>
+						<li>도움말</li>
+						<li>kR/KR</li>
+						<li>매장</li>
+						<li>로그인</li>
+					</ul>
+				</div>
+			</div>
 			<div class="logo-wrap">
 				<img src="images/mcm/mcm_logo.png" alt="로고">
+				
 			</div>
 			<div class="top-icon">
 				<ul>
@@ -32,10 +208,11 @@
 		<div class="txt-con">
 			<h1>MCM 2019 홀리데이 캠페인</h1>
 			<p>페스티브로 떠나는 여행</p>
-			<p>인플루언시 테너리스, 마네사 종, 새미 밀러와 함께 하늘위로 여행을 떠나보세요.</p>
+			<p>인플루언시 테너리스, 마네사 종, 새미 밀러와 함께 하늘위로 여행을  </p>
+			<p>떠나보세요.</p>
 			<span>캠페인 더보기</span>
 
-			<span>></span>
+			<span>&#62;</span>
 		</div>
 	</header>
 	<!--최상단-->
@@ -77,12 +254,23 @@
 		</div>
 		<div class="second-con">
 			<ul>
-				<li><img src="http://placehold.it/452x477/a1c" alt="제품1"></li>
-				<li><img src="http://placehold.it/452x477/ddd" alt="제품2"></li>
-				<li><img src="http://placehold.it/452x477/cdc" alt="제품3"></li>
-				<li><img src="http://placehold.it/452x477/bdb" alt="제품4"></li>
+				<li><img src="images/mcm/gift/img_1.jpg" alt="제품1 452/477"></li>
+				<li><img src="images/mcm/gift/img_2.jpg" alt="제품2"></li>
+				<li><img src="images/mcm/gift/img_1.jpg" alt="제품3"></li>
+				<li><img src="images/mcm/gift/img_1.jpg" alt="제품4"></li>
 			</ul>
 		</div>
+		<div class="indicator">
+			<ul>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+			</ul>
+		</div>
+		<div class="second-btn">
+					<span>선물 더보기</span>
+				</div>
 	</div>
 	<div class="third-wrap">
 		<div class="txt-con">
@@ -138,11 +326,81 @@
 		</div>
 	</div>
 	<div class="season-wrap">
+	
+<!--		<img src="images/mcm/bgi_season.jpg" alt="시즌오프배경">-->
 		<span>AW 19 시즌오프</span>
 		<img src="images/mcm/icon/icon_seasonoff.png" alt="시즌오프화살표">
 	</div>
 	<div class="info-wrap">
-		
+		<div class="txt-con">
+			<p>뉴스레터 구독</p>
+		</div>
+		<div class="email-wrap">
+			<p>이메일</p>
+			<input type="text" placeholder="이메일 주소를 입력해 주십시오." >
+		</div>
+		<div class="store-wrap">
+			<p>매장위치</p>
+			<span>위치:</span>
+			<input type="text" >
+			<span>Korea, Republic of</span>
+		</div>
+		<div class="lang-wrap">
+			<p>언어:</p>
+			<p>한국어</p>
+		</div>
+		<div class="info-con">
+			<ul>
+				<li><span>고객지원</span>
+				<img src="images/mcm/icon/info-arrow.png" alt="고객지원화살표">
+				</li>
+				<div class="sub-m">
+					<ul>
+						<li>1:1 고객 문의</li>
+						<li>자주 묻는 질문</li>
+						<li>주문 상태 확인</li>
+						<li>배송조회</li>
+						<li>반품 &amp; 교환</li>
+					</ul>
+				</div>
+				<li><span>약관 및 정책</span>
+				<img src="images/mcm/icon/info-arrow.png" alt="약관화살표">
+				</li>
+				<div class="sub-m">
+					<ul>
+						<li>개인정보처리방침</li>
+						<li>온라인 서비스 이용 약관</li>
+						<li>MCLUB 멤버십 이용 약관</li>
+					</ul>
+				</div>
+				<li><span>회사 소개</span>
+				<img src="images/mcm/icon/info-arrow.png" alt="회사소개화살표">
+				</li>
+				<div class="sub-m">
+					<ul>
+						<li>매장안내</li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+		<div class="sns-wrap">
+			<ul>
+				<li><img src="http://placehold.it/20x20" alt="페이스북">
+				<span>Facebook</span></li>
+				<li><img src="http://placehold.it/20x20" alt="페이스북">
+				<span>Instagram</span></li>
+				<li><img src="http://placehold.it/20x20" alt="페이스북">
+				<span>YouTube</span></li>
+				<li><img src="http://placehold.it/20x20" alt="페이스북">
+				<span>Twitter</span></li>
+			</ul>
+		</div>
+		<div class="top-con">
+		<img src="images/mcm/icon/top-arrpw.png" alt="top버튼 화살표">
+			<span>맨위로</span>
+		</div>
+			
+			
 	</div>
 	<footer>
 		<p>MCM | 서울 강남구 언주로 734 (논현동) | 성주디앤디 대표 윤명상 </p>
