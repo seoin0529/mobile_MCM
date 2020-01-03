@@ -1,5 +1,7 @@
 @charset "utf-8";
-html,body {
+
+html,
+body {
 	font-size: 10px;
 }
 
@@ -24,34 +26,35 @@ header .txt-con {
 	/*	background-color: palevioletred;*/
 	text-align: right;
 	position: absolute;
-	right: 26px;
+	right: 2%;
 	bottom: 0px;
 	color: #fff;
 }
 
 header .txt-con h1 {
 	display: inline-block;
-	width: 270px;
-	height: 35px;
 	line-height: 35px;
+	padding: 0 1%;
 	background-color: #fff;
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	margin-bottom: 3%;
 	text-align: center;
 	color: #080808;
 }
 
 header .txt-con p:nth-of-type(1) {
-	font-size: 3.5rem;
+	font-size: 3.7rem;
 	font-weight: 700;
 	margin-bottom: 2%;
 	color: #f2f2f2;
 	text-shadow: 1px 1px 4px #080808;
 }
 
-header .txt-con p:nth-of-type(2) {
-	font-size: 1.6rem;
+header .txt-con p:nth-of-type(2),
+header .txt-con p:nth-of-type(3) {
+	font-size: 2rem;
+	margin-bottom: 2%;
 	font-weight: bold;
 	color: #f2f2f2;
 }
@@ -61,7 +64,7 @@ header .txt-con span {
 	height: 30px;
 	line-height: 30px;
 	padding: 10% 0 5% 0;
-	font-size: 2.6rem;
+	font-size: 2.7rem;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -72,40 +75,14 @@ header .top-con {
 	position: relative;
 }
 
-header .top-con .logo-wrap {
-	line-height: 90px;
-	text-align: center;
-}
-
-header .top-con .logo-wrap img {
-	vertical-align: middle;
-}
-
-header .top-con .top-icon {
-	position: absolute;
-	top: 10px;
-	height: 25px;
-	right: 20px;
-}
-
-header .top-con .top-icon ul {
-	overflow: hidden;
-}
-
-header .top-con .top-icon ul li {
-	float: left;
-	width: 45px;
-	text-align: center;
-	font-size: 2.2rem;
-	font-weight: bold;
-}
-
-header .top-con .top-icon ul li img {
-	vertical-align: sub;
-}
-
-header .top-con .top-icon ul li:nth-child(3) {
-	line-height: 25px;
+header .top-con .nav {
+	display: none;
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	border-right: 1px solid #f2f2f2;
+	z-index: 11;
+	background-color: #080808;
 }
 
 header .top-con .btn-con {
@@ -122,10 +99,128 @@ header .top-con .btn-con .menu-btn {
 	background-color: #000;
 	margin: 7px;
 }
+header .top-con .nav .nav-btn{
+	position: fixed; width: 60px; line-height: 70px; height: 70px; left: 80%; background-color: #080808; text-align: center; border: 1px solid #f2f2f2; box-sizing: border-box; 
+}header .top-con .nav .nav-btn span{
+	display: inline-block; color: #f2f2f2;  font-weight: bold;
+}
+header .top-con .nav .main-nav {
+	width: 100%; overflow: hidden;
+}
 
+header .top-con .nav > .main-nav > li {
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #f2f2f2;
+	font-weight: bold;
+	font-size: 1.8rem;
+	color: #f2f2f2;
+	background-color: #080808;
+}
+
+header .top-con .nav > .main-nav > li > ul {
+	display: none;
+}
+
+header .top-con .nav > .main-nav > li > ul > li {
+	font-size: 1.7rem;
+	color: #080808;
+	background-color: #f2f2f2;
+}
+
+header .top-con .nav > .main-nav > li > ul > li > ul {
+	display: none;
+}
+
+header .top-con .nav > .main-nav > li > ul > li > ul > li {
+	font-weight: normal;
+}
+
+header .top-con .nav .b-con {
+	width: 100%;
+	position: relative;
+}
+
+header .top-con .nav .b-con input {
+	position: absolute;
+	width: 90%;
+	margin: 1% 0% 0% 1%;
+	height: 30px;
+	border: 0;
+	background-color: #f2f2f2;
+	top: 150px;
+}
+header .top-con .nav .b-con img{
+	position: absolute; top: 160px; left: 93%; 
+}
+header .top-con .nav .b-con ul li {
+	float: left;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	color: #f2f2f2;
+	font-size: 1.8rem;
+	text-align: center;
+	border: 1px solid #f7f7f7;
+	border-right: 0;
+	box-sizing: border-box;
+	border-top: 0;
+}
+
+header .top-con .logo-wrap {
+	position: absolute;
+	width: 12%;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+}
+
+
+
+header .top-con .logo-wrap img {
+	width: 100%;
+}
+
+header .top-con .top-icon {
+	position: absolute;
+	width: 25%;
+	top: 10px;
+	height: 25px;
+	right: 20px;
+	/*	background-color: #fff;*/
+}
+
+header .top-con .top-icon ul {
+	overflow: hidden;
+}
+
+header .top-con .top-icon ul li {
+	float: left;
+	width: 31%;
+	margin-right: 2%;
+	text-align: center;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+header .top-con .top-icon ul li:last-child {
+	margin-right: 0;
+}
+
+header .top-con .top-icon ul li img {
+	vertical-align: sub;
+}
+
+header .top-con .top-icon ul li:nth-child(3) {
+	line-height: 25px;
+}
+
+
+
+/*헤더끝*/
 .first-wrap {
 	width: 100%;
-	height: 676px;
+	margin-bottom: 6%;
 	position: relative;
 }
 
@@ -138,13 +233,13 @@ header .top-con .btn-con .menu-btn {
 .first-wrap .txt-con h2 {
 	font-size: 3.7rem;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 3%;
 	color: #080808;
 }
 
 .first-wrap .txt-con p {
 	font-size: 2.2rem;
-	margin-bottom: 15px;
+	margin-bottom: 2.5%;
 	color: #080808;
 }
 
@@ -154,7 +249,7 @@ header .top-con .btn-con .menu-btn {
 
 .first-wrap .first-con {
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 3%;
 }
 
 .first-wrap .first-con ul {
@@ -179,37 +274,36 @@ header .top-con .btn-con .menu-btn {
 }
 
 .first-wrap .first-con ul li p:first-of-type {
-	margin-top: 50px;
+	margin-top: 31%;
 }
 
 .first-wrap .first-con ul li p {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 7%;
 }
 
 .first-wrap .first-con ul li span {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 }
 
 .first-wrap .first-btn {
 	position: relative;
 	width: 100%;
 	height: 57px;
-	margin-top: 50px;
+	margin-top: 8%;
 	cursor: pointer;
 }
 
 .first-wrap .first-btn span {
 	position: absolute;
 	display: block;
-	width: 180px;
-	height: 57px;
+	padding: 3% 2%;
+	box-sizing: border-box;
 	left: 50%;
 	transform: translateX(-50%);
-	line-height: 57px;
 	text-align: center;
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	color: #f2f2f2;
 	background-color: #000;
 }
@@ -217,8 +311,8 @@ header .top-con .btn-con .menu-btn {
 /*클래식제품끝*/
 .second-wrap {
 	width: 100%;
-	height: 847px;
-	background-color: darkgray;
+	/*	height: 847px;*/
+	position: relative;
 }
 
 .second-wrap .txt-con {
@@ -243,7 +337,6 @@ header .top-con .btn-con .menu-btn {
 	width: 100%;
 	height: 477px;
 	overflow: hidden;
-	position: relative;
 	margin: 0 auto;
 	margin-top: 60px;
 }
@@ -255,44 +348,96 @@ header .top-con .btn-con .menu-btn {
 
 .second-wrap .second-con ul li {
 	position: absolute;
+	width: 442px;
+	height: 457px;
 	text-align: center;
+}
+
+.second-wrap .second-con img {
+	width: 100%;
+	height: 100%;
 }
 
 .second-wrap .second-con ul li:nth-of-type(1) {
 	left: 94px;
+
 }
 
 .second-wrap .second-con ul li:nth-of-type(2) {
 	left: 576px;
+
 }
 
 .second-wrap .second-con ul li:nth-of-type(3) {
 	left: 1028px;
+
 }
 
 .second-wrap .second-con ul li:nth-of-type(4) {
 	left: -390px;
 }
+
+.second-wrap .indicator {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 110px;
+	font-size: 17px;
+	text-align: center;
+}
+
+.second-wrap .indicator ul li {
+	display: inline-block;
+	padding: 0 0.5%;
+	color: #646464;
+	cursor: pointer;
+}
+
+.second-wrap .indicator ul li.active {
+	color: #080808;
+}
+
+.second-wrap .second-btn {
+	position: relative;
+	width: 100%;
+	height: 57px;
+	margin: 17% 0 11% 0;
+}
+
+.second-wrap .second-btn span {
+	position: absolute;
+	display: block;
+	padding: 3% 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	font-size: 2.6rem;
+	color: #f2f2f2;
+	background-color: #000;
+	cursor: pointer;
+}
+
 /*30*/
 
 /*작지만 의미있는 선물 끝*/
 .third-wrap {
 	width: 100%;
-	height: 668px;
 	margin: 0 auto;
+	margin-bottom: 6%;
 
 }
 
 .third-wrap .txt-con {
 	width: 100%;
 	text-align: center;
-	padding-top: 50px;
+	/*	padding-top: 50px;*/
 }
 
 .third-wrap .txt-con h2 {
 	font-size: 3.7rem;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 3%;
 	color: #080808;
 }
 
@@ -302,7 +447,7 @@ header .top-con .btn-con .menu-btn {
 }
 
 .third-wrap .txt-con p:first-of-type {
-	margin-bottom: 10px;
+	margin-bottom: 2.5%;
 }
 
 .third-wrap .third-con {
@@ -320,7 +465,8 @@ header .top-con .btn-con .menu-btn {
 	width: 40%;
 	margin-right: 20%;
 }
-.third-wrap .third-con ul li img{
+
+.third-wrap .third-con ul li img {
 	width: 100%;
 }
 
@@ -329,26 +475,29 @@ header .top-con .btn-con .menu-btn {
 }
 
 .third-wrap .third-con .third-btn {
-	width: 192px;
+	width: 100%;
 	height: 60px;
 	margin: 0 auto;
-	margin-top: 20px;
-	background-color: #080808;
+	margin-top: 8%;
+	cursor: pointer;
 }
 
 .third-wrap .third-con .third-btn span {
-	line-height: 60px;
-	font-size: 2.4rem;
+	/*	line-height: 60px;*/
+	position: absolute;
+	display: block;
+	padding: 3% 2%;
+	box-sizing: border-box;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 2.6rem;
 	color: #f2f2f2;
+	background-color: #000;
 }
 
-/*
-.third-wrap .third-con ul li:first-child{
-	margin-right: 20px;
-}
-*/
+
 .third-wrap .third-con ul li p {
-	font-size: 2.2rem;
+	font-size: 1.9rem;
 	font-weight: bold;
 	margin: 20px 0 10px;
 	color: #080808;
@@ -359,7 +508,7 @@ header .top-con .btn-con .menu-btn {
 }
 
 .third-wrap .third-con ul li span {
-	font-size: 2rem;
+	font-size: 1.9rem;
 	color: #080808;
 }
 
@@ -376,16 +525,16 @@ header .top-con .btn-con .menu-btn {
 /*여행필수아이템 끝*/
 .last-wrap {
 	width: 100%;
-	height: 727px;
+	background-color: powderblue;
 }
 
 .last-wrap .left-con {
 	float: left;
 	width: 47.5%;
-	height: 100%;
 	margin-right: 5%;
-	padding-left: 4%;
+	padding: 0 0 12% 4%;
 	box-sizing: border-box;
+	margin-bottom: 12%;
 }
 
 .last-wrap .left-con .left-top {
@@ -398,83 +547,97 @@ header .top-con .btn-con .menu-btn {
 
 .last-wrap .left-con .left-bottom {
 	width: 100%;
-	padding-top: 60px;
+	padding-top: 21%;
 	text-align: center;
+
 }
 
 .last-wrap .left-con .left-bottom h1 {
-	font-size: 3.7rem;
+	font-size: 3.5rem;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 7%;
 }
 
 .last-wrap .left-con .left-bottom p {
 	font-size: 2.2rem;
-	margin-bottom: 10px;
+	margin-bottom: 4%;
 }
 
 .last-wrap .left-con .left-bottom .left-btn {
-	width: 180px;
+	width: 100%;
+	position: relative;
 	height: 57px;
 	margin: 0 auto;
-	margin-top: 30px;
-	background-color: #080808;
+	margin-top: 11%;
 	cursor: pointer;
 }
 
 .last-wrap .left-con .left-bottom .left-btn span {
-	display: inline-block;
-	line-height: 57px;
-	font-size: 2.6rem;
+	display: block;
+	position: absolute;
+	width: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 6% 2%;
+	font-size: 2.5rem;
 	color: #f2f2f2;
+	background-color: #080808;
 }
 
 /*그의선물*/
 .last-wrap .right-con {
 	float: left;
 	width: 47.5%;
-	height: 100%;
 	padding-right: 17px;
+	margin-bottom: 12%;
 	box-sizing: border-box;
 }
 
 .last-wrap .right-con .right-top {
 	width: 100%;
-	padding: 60px 0 30px;
+	padding: 21% 0 11%;
 	box-sizing: border-box;
 	text-align: center;
+
 }
 
 .last-wrap .right-con .right-top h1 {
-	font-size: 3.7rem;
+	font-size: 3.5rem;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 7%;
 }
 
 .last-wrap .right-con .right-top p {
 	font-size: 2.2rem;
-	margin-bottom: 10px;
+	margin-bottom: 4%;
 }
 
 .last-wrap .right-con .right-top .right-btn {
-	width: 180px;
+	width: 100%;
+	position: relative;
 	height: 57px;
 	margin: 0 auto;
-	margin-top: 30px;
-	background-color: #080808;
+	margin-top: 11%;
 	cursor: pointer;
 }
 
 .last-wrap .right-con .right-top .right-btn span {
-	display: inline-block;
-	line-height: 57px;
-	font-size: 2.6rem;
+	display: block;
+	position: absolute;
+	width: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 6% 2%;
+	box-sizing: border-box;
+	font-size: 2.5rem;
 	color: #f2f2f2;
+	background-color: #080808;
 }
 
+
 .last-wrap .right-con .right-bottom {
-width: 100%;
-	}
+	width: 100%;
+}
 
 .last-wrap .right-con .right-bottom img {
 	width: 100%;
@@ -482,12 +645,14 @@ width: 100%;
 
 /*그녀의 선물*/
 /*그의 선물 그녀의 선물 파트 끝*/
+
 .season-wrap {
+	clear: both;
 	width: 100%;
-	height: 360px;
 	position: relative;
-	background-color: #080808;
+	height: 360px;
 	background: url("../images/mcm/bgi_season.jpg") no-repeat center;
+	background-size: 100% 100%;
 }
 
 .season-wrap span {
@@ -510,15 +675,184 @@ width: 100%;
 /*시즌오프 끝*/
 .info-wrap {
 	width: 100%;
-	height: 636px;
-	background-color: floralwhite;
+	/*	height: 636px;*/
+	padding: 20px 10px 10px 10px;
+	box-sizing: border-box;
+	/*	background-color: floralwhite;*/
+}
+
+.info-wrap .txt-con {
+	width: 100%;
+}
+
+.info-wrap .txt-con p {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 6%;
+	color: #2b2b2b;
+}
+
+.info-wrap .email-wrap {
+	width: 100%;
+	border-bottom: 1px solid #727272;
+}
+
+.info-wrap .email-wrap p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2%;
+	color: #2b2b2b;
+}
+
+.info-wrap .email-wrap input {
+	width: 100%;
+	height: 30px;
+	border: 0;
+	font-size: 1.7rem;
+	background-color: #f2f2f2;
+}
+
+.info-wrap .store-wrap {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #747474;
+}
+
+.info-wrap .store-wrap p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 4% 0 2% 0;
+	color: #767676;
+}
+
+.info-wrap .store-wrap span {
+	font-size: 2rem;
+}
+
+.info-wrap .store-wrap span:nth-of-type(2) {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.info-wrap .store-wrap input {
+	width: 60%;
+	height: 30px;
+	border: 0;
+	background-color: #f2f2f2;
+}
+
+.info-wrap .lang-wrap {
+	width: 100%;
+}
+
+.info-wrap .lang-wrap p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 4% 0;
+	color: #767676;
+}
+
+.info-wrap .lang-wrap p:nth-child(1) {
+	float: left;
+}
+
+.info-wrap .lang-wrap p:nth-child(2) {
+	float: right;
+	text-decoration: underline;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.info-wrap .info-con {
+	clear: both;
+	width: 100%;
+	position: relative;
+}
+
+.info-wrap .info-con ul {
+	overflow: hidden;
+}
+
+.info-wrap .info-con > ul > li {
+	position: relative;
+	background-color: #080808;
+	margin-bottom: 1%;
+	color: #f2f2f2;
+	padding: 3%;
+	box-sizing: border-box;
+}
+
+.info-wrap .info-con > ul > li span {
+	font-size: 2rem;
+}
+
+.info-wrap .info-con > ul > li img {
+	position: absolute;
+	right: 3%;
+}
+
+.info-wrap .info-con .sub-m {
+	display: none;
+}
+
+.info-wrap .info-con > ul > li img.rotate {
+	transform: rotate(180deg)
+}
+
+.info-wrap .info-con .sub-m ul li {
+	font-size: 1.9rem;
+	color: #747474;
+	padding: 15px 10px 0 10px;
+}
+
+.info-wrap .info-con .sub-m ul li:last-child {
+	padding-bottom: 15px;
+}
+
+.info-wrap .sns-wrap {
+	width: 100%;
+}
+
+.info-wrap .sns-wrap ul {
+	overflow: hidden;
+	margin-top: 4%;
+}
+
+.info-wrap .sns-wrap ul li {
+	float: left;
+	width: calc(100%/4);
+	text-align: center;
+	color: #747474;
+}
+
+.info-wrap .sns-wrap ul li span {
+	font-size: 1.8rem;
+}
+
+.info-wrap .top-con {
+	clear: both;
+	width: 100%;
+	padding-top: 11%;
+	text-align: center;
+}
+
+.info-wrap .top-con span {
+	font-size: 2.2rem;
+	color: #080808;
+	cursor: pointer;
+}
+
+.info-wrap .top-con img {
+	cursor: pointer;
 }
 
 /*정보파트 끝*/
 footer {
 	width: 100%;
-	height: 380px;
-	padding: 5% 2% 0 2%;
+	padding: 5% 2% 1% 2%;
 	box-sizing: border-box;
 	background-color: #d9d9d9;
 	text-align: center;
@@ -550,3 +884,15 @@ footer p:last-child {
 }
 
 /*푸터끝*/
+@media screen and (max-width:360px) {
+
+	html,
+	body {
+		font-size: 6px;
+	}
+
+	.second-wrap .indicator {
+		bottom: 100px;
+	}
+
+}
