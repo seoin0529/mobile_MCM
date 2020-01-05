@@ -13,18 +13,33 @@ $("document").ready(function(){
 	
 	
 	
+var $first_menu =$("header .nav .main-nav > ul > li"),
+	$second_menu = $("header .nav .main-nav ul .sub_f"),
+	$second_con =$("header .nav .main-nav ul .sub_f ul li"),
+	$t_menu =$("header .nav .main-nav ul .sub_f .sub_s"),
 	
-var $first_menu=$("header .top-con .nav > .main-nav > li"),
-	$second_con=$("header .top-con .nav > .main-nav > li > ul li");
+	a = 0;
+
 	$first_menu.click(function(){
-		$(this).children(".first").slideDown(500);
-		$first_menu.not(this).children(".first").slideUp(500);
-		
-	}) //2단까지 슬라이드 3단해야함
+		a=$first_menu.index(this);
+		$second_menu.eq(a).slideToggle(500);
+		$first_menu.not(this).next().slideUp();
+	});
 	$second_con.click(function(){
 		$(this).children().slideToggle();
-		
+		$second_con.not(this).children().slideUp(500);
 	})
+//var $first_menu=$("header .top-con .nav > .main-nav > li"),
+//	$second_con=$("header .top-con .nav > .main-nav > li > ul li");
+//	$first_menu.click(function(){
+//		$(this).children(".first").slideDown(500);
+//		$first_menu.not(this).children(".first").slideUp(500);
+//		
+//	}) //2단까지 슬라이드 3단해야함
+//	$second_con.click(function(){
+//		$(this).children().slideToggle();
+//		
+//	})
 	
 	
 //$(second_menu).click(function(){
