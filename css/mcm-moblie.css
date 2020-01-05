@@ -104,38 +104,27 @@ header .top-con .nav .nav-btn{
 }header .top-con .nav .nav-btn span{
 	display: inline-block; color: #f2f2f2;  font-weight: bold;
 }
-header .top-con .nav .main-nav {
-	width: 100%; overflow: hidden;
+header .nav .main-nav{
+	width: 100%; overflow: hidden; text-align: center;
 }
-
-header .top-con .nav > .main-nav > li {
-	line-height: 50px;
-	text-align: center;
-	border-bottom: 1px solid #f2f2f2;
-	font-weight: bold;
-	font-size: 1.8rem;
-	color: #f2f2f2;
-	background-color: #080808;
+header .nav .main-nav ul{
+	overflow: hidden;
 }
-
-header .top-con .nav > .main-nav > li > ul {
+header .nav .main-nav ul li{
+	color: #fff; line-height: 50px; border-bottom: 1px solid #f2f2f2; font-weight: bold;font-size: 1.8rem; color: #f2f2f2;
+}
+header .nav .main-nav ul .sub_f{
 	display: none;
 }
-
-header .top-con .nav > .main-nav > li > ul > li {
-	font-size: 1.7rem;
-	color: #080808;
-	background-color: #f2f2f2;
+header .nav .main-nav ul .sub_f ul li{
+	font-size: 1.7rem; color: #080808; background-color: #f2f2f2;
 }
-
-header .top-con .nav > .main-nav > li > ul > li > ul {
+header .nav .main-nav ul .sub_f .sub_s{
 	display: none;
 }
-
-header .top-con .nav > .main-nav > li > ul > li > ul > li {
-	font-weight: normal;
+header .nav .main-nav ul .sub_f .sub_s li{
+	font-weight: normal; font-size: 1.7rem;
 }
-
 header .top-con .nav .b-con {
 	width: 100%;
 	position: relative;
@@ -174,7 +163,6 @@ header .top-con .logo-wrap {
 	transform: translateX(-50%);
 	top: 10%;
 }
-
 
 
 header .top-con .logo-wrap img {
