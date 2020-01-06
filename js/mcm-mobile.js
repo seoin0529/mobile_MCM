@@ -8,7 +8,7 @@ $("document").ready(function(){
 	})//nav오픈
 	$nav_close.click(function(){
 		$main.fadeOut(300);
-		
+		$second_menu.slideUp();
 	})//nav닫기
 	
 	
