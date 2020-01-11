@@ -67,4 +67,38 @@ var $first_menu =$("header .nav .main-nav > ul > li"),
 		$("html, body").animate({scrollTop:0},500);
 		return false;
 	})//상단으로이동
+	
+
+$('.gallery').slick({
+  centerMode: true,
+  centerPadding: '35px',
+	autoplay:true,
+	autoplaySpeed:2000,
+  slidesToShow: 1 //화면에 보여질 이미지 갯수
+//  responsive: [
+//    {
+//      breakpoint: 640, // 화면사이즈
+//      settings: {
+//        arrows: false,  //화살표
+//        centerMode: true, 
+//        centerPadding: '60px',
+//        slidesToShow: 1
+//      }
+//    },
+//    {
+//      breakpoint: 360,
+//      settings: { //사이즈에 적용될설정
+//        arrows: false,
+//        centerMode: true,
+//        centerPadding: '400px',
+//        slidesToShow: 1
+//      }
+//    }
+//  ]
+});
+	
+
+	
+	
+	
 })//end
