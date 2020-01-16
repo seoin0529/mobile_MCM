@@ -900,8 +900,17 @@ footer p:last-child {
 	.second-wrap .indicator {
 		bottom: 100px;
 	}
+	header .nav .main-nav ul li{
+font-size: 2.1rem; 
+}
+	header .nav .main-nav ul .sub_f ul li{
+	font-size: 2.1rem;
+}
+	header .nav .main-nav ul .sub_f .sub_s li{
+	font-size: 2.1rem;
+}
 	.gallery{
-	width: 100%; margin: 0 auto;
+	width: 100%; margin: 0 auto; overflow: hidden;
 }
 .gallery .slick-slide{
 transition: all ease-in-out .3s;
