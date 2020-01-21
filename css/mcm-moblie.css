@@ -16,7 +16,7 @@ header {
 	width: 100%;
 	height: 580px;
 	position: relative;
-	background: url("../images/mcm/top/bg_img1.jpg") no-repeat;
+	background: url("http://westai.co.kr/images/mcm/top/bg_img1.jpg") no-repeat;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
@@ -99,32 +99,65 @@ header .top-con .btn-con .menu-btn {
 	background-color: #000;
 	margin: 7px;
 }
-header .top-con .nav .nav-btn{
-	position: fixed; width: 60px; line-height: 70px; height: 70px; left: 80%; background-color: #080808; text-align: center; border: 1px solid #f2f2f2; box-sizing: border-box; 
-}header .top-con .nav .nav-btn span{
-	display: inline-block; color: #f2f2f2;  font-weight: bold;
+
+header .top-con .nav .nav-btn {
+	position: fixed;
+	width: 60px;
+	line-height: 70px;
+	height: 70px;
+	left: 80%;
+	background-color: #080808;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	box-sizing: border-box;
 }
-header .nav .main-nav{
-	width: 100%; overflow: hidden; text-align: center;
+
+header .top-con .nav .nav-btn span {
+	display: inline-block;
+	color: #f2f2f2;
+	font-weight: bold;
 }
-header .nav .main-nav ul{
+
+header .nav .main-nav {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+header .nav .main-nav ul {
 	overflow: hidden;
 }
-header .nav .main-nav ul li{
-	color: #fff; line-height: 50px; border-bottom: 1px solid #f2f2f2; font-weight: bold;font-size: 1.8rem; color: #f2f2f2;
+
+header .nav .main-nav ul > li {
+	border-bottom: 1px solid #f2f2f2;
+	font-weight: bold;
+	font-size: 1.8rem;
+	color: #f2f2f2;
 }
-header .nav .main-nav ul .sub_f{
+header .nav .main-nav ul > li .main{
+	color: #fff; line-height: 50px; 
+}
+header .nav .main-nav ul.sub_f {
 	display: none;
 }
-header .nav .main-nav ul .sub_f ul li{
-	font-size: 1.7rem; color: #080808; background-color: #f2f2f2;
+
+header .nav .main-nav ul .sub_f > li {
+	font-size: 1.7rem;
+	line-height: 40px;
+	color: #080808;
+	background-color: #f2f2f2;
 }
-header .nav .main-nav ul .sub_f .sub_s{
+
+header .nav .main-nav ul li .sub_f .sub_s {
 	display: none;
 }
-header .nav .main-nav ul .sub_f .sub_s li{
-	font-weight: normal; font-size: 1.7rem;
+
+header .nav .main-nav ul li .sub_f .sub_s li {
+	font-weight: normal;
+	font-size: 1.7rem;
+	color: #080808;
 }
+
 header .top-con .nav .b-con {
 	width: 100%;
 	position: relative;
@@ -139,9 +172,13 @@ header .top-con .nav .b-con input {
 	background-color: #f2f2f2;
 	top: 150px;
 }
-header .top-con .nav .b-con img{
-	position: absolute; top: 160px; left: 93%; 
+
+header .top-con .nav .b-con img {
+	position: absolute;
+	top: 160px;
+	left: 93%;
 }
+
 header .top-con .nav .b-con ul li {
 	float: left;
 	width: 50%;
@@ -319,9 +356,10 @@ header .top-con .top-icon ul li:nth-child(3) {
 	font-size: 2.2rem;
 	color: #080808;
 }
-.second-wrap .gallery{
+
+.second-wrap .gallery {
 	margin-top: 60px;
-/*	margin: 0 auto;*/
+	/*	margin: 0 auto;*/
 }
 
 .second-wrap .second-btn {
@@ -344,11 +382,12 @@ header .top-con .top-icon ul li:nth-child(3) {
 	cursor: pointer;
 }
 
-.gallery{
+.gallery {
 	width: 100%;
 }
-.gallery .slick-slide{
-transition: all ease-in-out .3s;
+
+.gallery .slick-slide {
+	transition: all ease-in-out .3s;
 }
 
 
@@ -654,7 +693,7 @@ transition: all ease-in-out .3s;
 	width: 100%;
 	position: relative;
 	height: 360px;
-	background: url("../images/mcm/bgi_season.jpg") no-repeat center;
+	background: url("http://westai.co.kr/images/mcm/bgi_season.jpg") no-repeat center;
 	background-size: 100% 100%;
 }
 
@@ -781,24 +820,28 @@ transition: all ease-in-out .3s;
 
 .info-wrap .info-con > ul > li {
 	position: relative;
-	background-color: #080808;
-	margin-bottom: 1%;
-	color: #f2f2f2;
-	padding: 3%;
-	box-sizing: border-box;
+	width: 100%; 
+
+	
+	
 }
 
 .info-wrap .info-con > ul > li span {
-	font-size: 2.2rem;
+	width: 100%; padding: 3%; line-height: 25px;
+	font-size: 2.2rem; display: inline-block; height: 50px; background-color: #080808;
+	box-sizing: border-box;	margin-bottom: 1%;color: #f2f2f2;
+	
 }
 
 .info-wrap .info-con > ul > li img {
-	position: absolute;
-	right: 3%;
+	position: absolute; 
+	right: 3%; 
+	top: 20px;
+/*	top: 50%; transform: translateY(-50%);*/
 }
 
 .info-wrap .info-con .sub-m {
-	display: none;
+	display: none; background-color: #f2f2f2;
 }
 
 .info-wrap .info-con > ul > li img.rotate {
@@ -834,7 +877,8 @@ transition: all ease-in-out .3s;
 .info-wrap .sns-wrap ul li span {
 	font-size: 1.8rem;
 }
-.info-wrap .sns-wrap ul li img{
+
+.info-wrap .sns-wrap ul li img {
 	vertical-align: bottom;
 }
 
@@ -900,23 +944,31 @@ footer p:last-child {
 	.second-wrap .indicator {
 		bottom: 100px;
 	}
-	header .nav .main-nav ul li{
-font-size: 2.1rem; 
-}
-	header .nav .main-nav ul .sub_f ul li{
-	font-size: 2.1rem;
-}
-	header .nav .main-nav ul .sub_f .sub_s li{
-	font-size: 2.1rem;
-}
-	.gallery{
-	width: 100%; margin: 0 auto; overflow: hidden;
-}
-.gallery .slick-slide{
-transition: all ease-in-out .3s;
-}
-	.gallery .slick-slide img{
+
+	header .nav .main-nav ul li {
+		font-size: 2.1rem;
+	}
+
+	header .nav .main-nav ul .sub_f li {
+		font-size: 2.1rem;
+	}
+
+	header .nav .main-nav ul li .sub_f li .sub_s li {
+		font-size: 2.1rem;
+	}
+
+	.gallery {
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.gallery .slick-slide {
+		transition: all ease-in-out .3s;
+	}
+
+	.gallery .slick-slide img {
 		width: 95%;
-	}	
+	}
 
 }
