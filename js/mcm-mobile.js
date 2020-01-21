@@ -13,10 +13,10 @@ $("document").ready(function(){
 	
 	
 	
-var $first_menu =$("header .nav .main-nav > ul > li"),
-	$second_menu = $("header .nav .main-nav ul .sub_f"),
-	$second_con =$("header .nav .main-nav ul .sub_f ul li"),
-	$t_menu =$("header .nav .main-nav ul .sub_f .sub_s"),
+var $first_menu =$("header .nav .main-nav > ul > li .main"),
+	$second_menu = $("header .nav .main-nav ul li .sub_f"),
+	$second_con =$("header .nav .main-nav ul li .sub_f li"),
+	$t_menu =$("header .nav .main-nav ul li .sub_f li .sub_s"),
 	
 	a = 0;
 
